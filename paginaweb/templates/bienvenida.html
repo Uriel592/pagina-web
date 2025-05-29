@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h2>¡Bienvenido {{ email }}!</h2>
+        <p>Gracias por iniciar sesión. Esta es tu área de usuario.</p>
+        <a href="{{ url_for('logout') }}" class="btn btn-danger">Cerrar Sesión</a>
+    </div>
+</div>
+{% endblock %}
